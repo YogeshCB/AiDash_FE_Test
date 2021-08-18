@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Aidash_fe Execution Suite">
+  <test name="Aidash_fe Execution Suite Test"/>
+  	<parameter name="browser" value="firefox"/>
+	 <parameter name="Director" value ="Martin Scorsese"/>
+
+<!--  		<class name="TestExecutionSuite.UpdateTreeTestCases"/>-->
+<!--		<class name="TestExecutionSuite.BasicFunctionalExecutionSuite"/>-->
+
+
+
+	  <test name="Create tree ">
+		  <classes>
+			  <class name="TestExecutionSuite.BasicFunctionalExecutionSuite"/>
+		  </classes>
+	  </test>
+	<test name="Update Tree">
+		<classes>
+			<class name="TestExecutionSuite.UpdateTreeTestCases"/>
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
