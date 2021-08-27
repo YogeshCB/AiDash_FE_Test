@@ -203,15 +203,16 @@
                   </a> <!-- driverInitalization(firefox) -->
                   <span class="method-name">driverInitalization</span>
                   <span class="parameters">(firefox)</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+                  <div class="stack-trace">java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: /usr/bin/firefox
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
+	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
 	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
 	at TestCases.DriverInitalization.initalizeDriver(DriverInitalization.java:38)
 	at TestCases.CommonTestCases.initalizeDriver(CommonTestCases.java:43)
 	at TestExecutionSuite.BasicFunctionalExecutionSuite.driverInitalization(BasicFunctionalExecutionSuite.java:38)
@@ -233,15 +234,16 @@
                   </a> <!-- driverInitalization(firefox) -->
                   <span class="method-name">driverInitalization</span>
                   <span class="parameters">(firefox)</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+                  <div class="stack-trace">java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: /usr/bin/firefox
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
+	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
 	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
 	at TestCases.DriverInitalization.initalizeDriver(DriverInitalization.java:38)
 	at TestCases.EditTreeTestCases.initalizeDriver(EditTreeTestCases.java:44)
 	at TestExecutionSuite.UpdateTreeTestCases.driverInitalization(UpdateTreeTestCases.java:34)
@@ -482,41 +484,41 @@ data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'driverInitalization')
 data.setCell(0, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
-data.setCell(0, 3, 655);
+data.setCell(0, 3, 544);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'driverInitalization')
 data.setCell(1, 2, 'TestExecutionSuite.UpdateTreeTestCases')
-data.setCell(1, 3, 171);
+data.setCell(1, 3, 164);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Navigation')
+data.setCell(2, 1, 'openUrlForAidashLoginPage')
 data.setCell(2, 2, 'TestExecutionSuite.UpdateTreeTestCases')
 data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CreateTree')
+data.setCell(3, 1, 'CreateTreeNavigation')
 data.setCell(3, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'LoginToAidash')
+data.setCell(4, 1, 'CreateTree')
 data.setCell(4, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'CreateTreeScreen2')
+data.setCell(5, 1, 'LoginToAidash')
 data.setCell(5, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
 data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'openUrlForAidashLoginPage')
+data.setCell(6, 1, 'CreateTreeScreen2')
 data.setCell(6, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'CreateTreeNavigation')
+data.setCell(7, 1, 'openUrlForAidashLoginPage')
 data.setCell(7, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'EditTreeCardsPage')
+data.setCell(8, 1, 'ListTreeCardsPage')
 data.setCell(8, 2, 'TestExecutionSuite.UpdateTreeTestCases')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'CreateTreeScreen3')
+data.setCell(9, 1, 'EditTreeCardsPage')
 data.setCell(9, 2, 'TestExecutionSuite.UpdateTreeTestCases')
 data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
@@ -524,22 +526,22 @@ data.setCell(10, 1, 'UpdateTreeCardsPage')
 data.setCell(10, 2, 'TestExecutionSuite.UpdateTreeTestCases')
 data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'ListTreeCardsPage')
+data.setCell(11, 1, 'CreateTreeScreen3')
 data.setCell(11, 2, 'TestExecutionSuite.UpdateTreeTestCases')
 data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'LoginToAidash')
+data.setCell(12, 1, 'Navigation')
 data.setCell(12, 2, 'TestExecutionSuite.UpdateTreeTestCases')
 data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'openUrlForAidashLoginPage')
+data.setCell(13, 1, 'LoginToAidash')
 data.setCell(13, 2, 'TestExecutionSuite.UpdateTreeTestCases')
 data.setCell(13, 3, 0);
 window.suiteTableData['Aidash_fe_Execution_Suite']= { tableData: data, tableDiv: 'times-div-Aidash_fe_Execution_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 827 ms</span>
+              <span class="suite-total-time">Total running time: 709 ms</span>
               <div id="times-div-Aidash_fe_Execution_Suite">
               </div> <!-- times-div-Aidash_fe_Execution_Suite -->
             </div> <!-- times-div -->
@@ -582,86 +584,86 @@ return data;
               <div class="chronological-class-name">TestExecutionSuite.BasicFunctionalExecutionSuite</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">62 ms</span>
+                <span class="method-start">56 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">driverInitalization(firefox)</span>
-                <span class="method-start">69 ms</span>
+                <span class="method-start">64 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">afterEveryMethod([TestResult name=driverInitalization status=FAILURE method=BasicFunctionalExecutionSuite.driverInita...)</span>
-                <span class="method-start">728 ms</span>
+                <span class="method-start">613 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">openUrlForAidashLoginPage</span>
-                <span class="method-start">730 ms</span>
+                <span class="method-start">615 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginToAidash</span>
-                <span class="method-start">731 ms</span>
+                <span class="method-start">616 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreateTreeNavigation</span>
-                <span class="method-start">731 ms</span>
+                <span class="method-start">616 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreateTree</span>
-                <span class="method-start">732 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreateTreeScreen2</span>
-                <span class="method-start">732 ms</span>
+                <span class="method-start">617 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestExecutionSuite.UpdateTreeTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">747 ms</span>
+                <span class="method-start">634 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">driverInitalization(firefox)</span>
-                <span class="method-start">748 ms</span>
+                <span class="method-start">635 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">afterEveryMethod([TestResult name=driverInitalization status=FAILURE method=UpdateTreeTestCases.driverInitalization(j...)</span>
-                <span class="method-start">920 ms</span>
+                <span class="method-start">800 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">openUrlForAidashLoginPage</span>
-                <span class="method-start">920 ms</span>
+                <span class="method-start">800 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginToAidash</span>
-                <span class="method-start">921 ms</span>
+                <span class="method-start">801 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Navigation</span>
-                <span class="method-start">921 ms</span>
+                <span class="method-start">801 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ListTreeCardsPage</span>
-                <span class="method-start">922 ms</span>
+                <span class="method-start">801 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EditTreeCardsPage</span>
-                <span class="method-start">922 ms</span>
+                <span class="method-start">802 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UpdateTreeCardsPage</span>
-                <span class="method-start">923 ms</span>
+                <span class="method-start">802 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreateTreeScreen3</span>
-                <span class="method-start">923 ms</span>
+                <span class="method-start">802 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/7</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 27 16:06:43 IST 2021</td>
+<td>Started on:</td><td>Fri Aug 27 16:49:03 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (176 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (169 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,8 +79,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace937744315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace937744315'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace749927456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace749927456'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -174,28 +174,30 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestExecutionSuite.UpdateTreeTestCases.driverInitalization()'><b>driverInitalization</b><br>Test class: TestExecutionSuite.UpdateTreeTestCases<br>Parameters: firefox</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+<td><div><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: /usr/bin/firefox
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
+	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
 	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
 	at TestCases.DriverInitalization.initalizeDriver(DriverInitalization.java:38)
 	at TestCases.EditTreeTestCases.initalizeDriver(EditTreeTestCases.java:44)
 	at TestExecutionSuite.UpdateTreeTestCases.driverInitalization(UpdateTreeTestCases.java:34)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace149225732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace149225732'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1067599825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1067599825'><pre>java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: /usr/bin/firefox
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+	at org.openqa.selenium.firefox.Executable.&lt;init&gt;(Executable.java:43)
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:123)
+	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
 	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
 	at TestCases.DriverInitalization.initalizeDriver(DriverInitalization.java:38)
 	at TestCases.EditTreeTestCases.initalizeDriver(EditTreeTestCases.java:44)
 	at TestExecutionSuite.UpdateTreeTestCases.driverInitalization(UpdateTreeTestCases.java:34)
@@ -243,8 +245,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1360215046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1360215046'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace775081157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace775081157'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -285,8 +287,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace406375608", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace406375608'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace258112787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace258112787'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -327,8 +329,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace762809053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace762809053'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1856158867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1856158867'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -369,8 +371,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1424698224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1424698224'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1594873248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594873248'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -411,8 +413,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1667305539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1667305539'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1230955136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1230955136'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -453,8 +455,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2107543287", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2107543287'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace892335322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace892335322'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -495,8 +497,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1870209957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1870209957'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1330400026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1330400026'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
 	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
 	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

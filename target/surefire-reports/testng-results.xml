@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="14" passed="0" failed="2" skipped="12">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-27T10:36:43Z" name="Aidash_fe Execution Suite" finished-at="2021-08-27T10:36:44Z" duration-ms="919">
+  <suite started-at="2021-08-27T11:19:02Z" name="Aidash_fe Execution Suite" finished-at="2021-08-27T11:19:03Z" duration-ms="798">
     <groups>
     </groups>
-    <test started-at="2021-08-27T10:36:43Z" name="Aidash_fe Execution Suite Test" finished-at="2021-08-27T10:36:43Z" duration-ms="2">
+    <test started-at="2021-08-27T11:19:02Z" name="Aidash_fe Execution Suite Test" finished-at="2021-08-27T11:19:02Z" duration-ms="1">
     </test> <!-- Aidash_fe Execution Suite Test -->
-    <test started-at="2021-08-27T10:36:43Z" name="Create tree " finished-at="2021-08-27T10:36:43Z" duration-ms="670">
+    <test started-at="2021-08-27T11:19:02Z" name="Create tree " finished-at="2021-08-27T11:19:03Z" duration-ms="562">
       <class name="TestExecutionSuite.BasicFunctionalExecutionSuite">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="setup" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:02Z" name="setup" finished-at="2021-08-27T16:49:02Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="driverInitalization(java.lang.String)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="driverInitalization" finished-at="2021-08-27T16:06:43Z" duration-ms="655" status="FAIL">
+        <test-method signature="driverInitalization(java.lang.String)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:02Z" name="driverInitalization" finished-at="2021-08-27T16:49:03Z" duration-ms="544" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -23,18 +23,19 @@
           </params>
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: /usr/bin/firefox]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: /usr/bin/firefox
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+	at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
 	at TestCases.DriverInitalization.initalizeDriver(DriverInitalization.java:38)
 	at TestCases.CommonTestCases.initalizeDriver(CommonTestCases.java:43)
 	at TestExecutionSuite.BasicFunctionalExecutionSuite.driverInitalization(BasicFunctionalExecutionSuite.java:38)
@@ -72,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitalization -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -124,7 +125,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
-        <test-method signature="openUrlForAidashLoginPage()[pri:1, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="openUrlForAidashLoginPage" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
+        <test-method signature="openUrlForAidashLoginPage()[pri:1, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="openUrlForAidashLoginPage" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
@@ -169,60 +170,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrlForAidashLoginPage -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method signature="LoginToAidash()[pri:2, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="LoginToAidash" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
-	at TestCases.CommonTestCases.takeScreenShotOnFailure(CommonTestCases.java:100)
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.afterEveryMethod(BasicFunctionalExecutionSuite.java:87)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginToAidash -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method signature="CreateTreeNavigation()[pri:3, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="CreateTreeNavigation" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
+        <test-method signature="CreateTreeNavigation()[pri:3, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="CreateTreeNavigation" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
@@ -267,15 +215,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTreeNavigation -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
-        <test-method signature="CreateTree()[pri:4, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="CreateTree" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
+        <test-method signature="LoginToAidash()[pri:2, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="LoginToAidash" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
@@ -319,12 +267,16 @@
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateTree -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="teardown" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- LoginToAidash -->
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="CreateTreeScreen2()[pri:5, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="CreateTreeScreen2" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- afterEveryMethod -->
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryMethod -->
+        <test-method signature="CreateTreeScreen2()[pri:5, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="CreateTreeScreen2" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
@@ -369,29 +321,78 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTreeScreen2 -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="SKIP">
+        <test-method signature="CreateTree()[pri:4, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="CreateTree" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at TestCases.CommonTestCases.takeScreenShotOnFailure(CommonTestCases.java:100)
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.afterEveryMethod(BasicFunctionalExecutionSuite.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateTree -->
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:03Z" name="teardown" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- TestExecutionSuite.BasicFunctionalExecutionSuite -->
     </test> <!-- Create tree  -->
-    <test started-at="2021-08-27T10:36:43Z" name="Update Tree" finished-at="2021-08-27T10:36:44Z" duration-ms="176">
+    <test started-at="2021-08-27T11:19:03Z" name="Update Tree" finished-at="2021-08-27T11:19:03Z" duration-ms="169">
       <class name="TestExecutionSuite.BasicFunctionalExecutionSuite">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:06:43Z" name="beforesuite" finished-at="2021-08-27T16:06:43Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:TestExecutionSuite.BasicFunctionalExecutionSuite@401e7803]" started-at="2021-08-27T16:49:02Z" name="beforesuite" finished-at="2021-08-27T16:49:02Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:43Z" name="beforesuite" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:02Z" name="beforesuite" finished-at="2021-08-27T16:49:02Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforesuite -->
       </class> <!-- TestExecutionSuite.BasicFunctionalExecutionSuite -->
       <class name="TestExecutionSuite.UpdateTreeTestCases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:43Z" name="setup" finished-at="2021-08-27T16:06:43Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="setup" finished-at="2021-08-27T16:49:03Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="driverInitalization(java.lang.String)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:43Z" name="driverInitalization" finished-at="2021-08-27T16:06:44Z" duration-ms="171" status="FAIL">
+        <test-method signature="driverInitalization(java.lang.String)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="driverInitalization" finished-at="2021-08-27T16:49:03Z" duration-ms="164" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -401,18 +402,19 @@
           </params>
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+              <![CDATA[Specified firefox binary location does not exist or is not a real file: /usr/bin/firefox]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
+              <![CDATA[java.lang.IllegalStateException: Specified firefox binary location does not exist or is not a real file: /usr/bin/firefox
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:504)
+	at org.openqa.selenium.firefox.Executable.<init>(Executable.java:43)
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:123)
+	at org.openqa.selenium.firefox.FirefoxOptions$Binary.asBinary(FirefoxOptions.java:420)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinaryOrNull(FirefoxOptions.java:220)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
 	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
 	at TestCases.DriverInitalization.initalizeDriver(DriverInitalization.java:38)
 	at TestCases.EditTreeTestCases.initalizeDriver(EditTreeTestCases.java:44)
 	at TestExecutionSuite.UpdateTreeTestCases.driverInitalization(UpdateTreeTestCases.java:34)
@@ -450,56 +452,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitalization -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method signature="openUrlForAidashLoginPage()[pri:1, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="openUrlForAidashLoginPage" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
-	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
-	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUrlForAidashLoginPage -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -551,7 +504,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
-        <test-method signature="Navigation()[pri:3, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="Navigation" finished-at="2021-08-27T16:06:44Z" duration-ms="1" status="SKIP">
+        <test-method signature="openUrlForAidashLoginPage()[pri:1, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="openUrlForAidashLoginPage" finished-at="2021-08-27T16:49:03Z" duration-ms="1" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
@@ -595,12 +548,12 @@
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Navigation -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- openUrlForAidashLoginPage -->
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
-        <test-method signature="LoginToAidash()[pri:2, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="LoginToAidash" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
+        <test-method signature="LoginToAidash()[pri:2, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="LoginToAidash" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
@@ -645,60 +598,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToAidash -->
-        <test-method signature="EditTreeCardsPage()[pri:5, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="EditTreeCardsPage" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
-	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
-	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditTreeCardsPage -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method signature="ListTreeCardsPage()[pri:4, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="ListTreeCardsPage" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
+        <test-method signature="ListTreeCardsPage()[pri:4, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="ListTreeCardsPage" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
@@ -743,15 +643,121 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ListTreeCardsPage -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEveryMethod -->
-        <test-method signature="UpdateTreeCardsPage()[pri:6, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="UpdateTreeCardsPage" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
+        <test-method signature="Navigation()[pri:3, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="Navigation" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
+	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navigation -->
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryMethod -->
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryMethod -->
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryMethod -->
+        <test-method signature="EditTreeCardsPage()[pri:5, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="EditTreeCardsPage" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at TestCases.EditTreeTestCases.takeScreenShotOnFailure(EditTreeTestCases.java:119)
+	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditTreeCardsPage -->
+        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="afterEveryMethod" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEveryMethod -->
+        <test-method signature="UpdateTreeCardsPage()[pri:6, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="UpdateTreeCardsPage" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
@@ -796,11 +802,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateTreeCardsPage -->
-        <test-method is-config="true" signature="afterEveryMethod(org.testng.ITestResult)[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="afterEveryMethod" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method signature="CreateTreeScreen3()[pri:7, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="CreateTreeScreen3" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
+        <test-method signature="CreateTreeScreen3()[pri:7, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="CreateTreeScreen3" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null]]>
@@ -845,7 +847,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateTreeScreen3 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:06:44Z" name="teardown" finished-at="2021-08-27T16:06:44Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestExecutionSuite.UpdateTreeTestCases@24a35978]" started-at="2021-08-27T16:49:03Z" name="teardown" finished-at="2021-08-27T16:49:03Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
