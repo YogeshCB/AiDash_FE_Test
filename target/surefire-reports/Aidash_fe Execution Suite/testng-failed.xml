@@ -8,9 +8,11 @@
       <class name="TestExecutionSuite.BasicFunctionalExecutionSuite">
         <methods>
           <include name="CreateTreeScreen2"/>
+          <include name="LoginToAidash"/>
+          <include name="openUrlForAidashLoginPage"/>
+          <include name="driverInitalization" invocation-numbers="0"/>
           <include name="beforesuite"/>
           <include name="CreateTreeNavigation"/>
-          <include name="teardown"/>
           <include name="afterEveryMethod"/>
           <include name="CreateTree"/>
           <include name="setup"/>
@@ -20,7 +22,6 @@
         <methods>
           <include name="setup"/>
           <include name="afterEveryMethod"/>
-          <include name="teardown"/>
           <include name="beforesuite"/>
         </methods>
       </class> <!-- TestExecutionSuite.UpdateTreeTestCases -->
@@ -31,17 +32,21 @@
       <class name="TestExecutionSuite.UpdateTreeTestCases">
         <methods>
           <include name="UpdateTreeCardsPage"/>
+          <include name="driverInitalization" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="afterEveryMethod"/>
-          <include name="teardown"/>
+          <include name="openUrlForAidashLoginPage"/>
+          <include name="Navigation"/>
           <include name="CreateTreeScreen3"/>
+          <include name="LoginToAidash"/>
           <include name="beforesuite"/>
+          <include name="ListTreeCardsPage"/>
+          <include name="EditTreeCardsPage"/>
         </methods>
       </class> <!-- TestExecutionSuite.UpdateTreeTestCases -->
       <class name="TestExecutionSuite.BasicFunctionalExecutionSuite">
         <methods>
           <include name="beforesuite"/>
-          <include name="teardown"/>
           <include name="afterEveryMethod"/>
           <include name="setup"/>
         </methods>

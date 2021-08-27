@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.asserts.SoftAssert;
 
 import commonMethods.CommMeths;
@@ -31,7 +32,9 @@ public class DriverInitalization
 			Logs.startLog("Initialzing Driver");
 			Logs.addToReport("Execution starts now. Driver Initialization for ", info);
 			System.setProperty("webdriver.gecko.driver", "./exes/geckodriver");
-			driver = new FirefoxDriver();
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+			driver = new FirefoxDriver(options);
 			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			Logs.addToReport("Browser Initialization success", pass);

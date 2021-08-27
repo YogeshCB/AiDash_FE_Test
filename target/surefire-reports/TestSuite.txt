@@ -1,70 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 1,004.996 sec <<< FAILURE! - in TestSuite
-CreateTreeNavigation(TestExecutionSuite.BasicFunctionalExecutionSuite)  Time elapsed: 4.211 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-Element <span> could not be scrolled into view
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeNavigation(BasicFunctionalExecutionSuite.java:60)
+Tests run: 30, Failures: 4, Errors: 0, Skipped: 26, Time elapsed: 1.201 sec <<< FAILURE! - in TestSuite
+driverInitalization(TestExecutionSuite.BasicFunctionalExecutionSuite)  Time elapsed: 0.659 sec  <<< FAILURE!
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.driverInitalization(BasicFunctionalExecutionSuite.java:38)
 
-CreateTree(TestExecutionSuite.BasicFunctionalExecutionSuite)  Time elapsed: 240.112 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='MuiButton-label'][contains(text(),'Next')]' (tried for 100 second(s) with 500 milliseconds interval)
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTree(BasicFunctionalExecutionSuite.java:68)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //*[@class='MuiButton-label'][contains(text(),'Next')]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e
-*** Element info: {Using=xpath, value=//*[@class='MuiButton-label'][contains(text(),'Next')]}
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTree(BasicFunctionalExecutionSuite.java:68)
+afterEveryMethod(TestExecutionSuite.BasicFunctionalExecutionSuite)  Time elapsed: 0.66 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.afterEveryMethod(BasicFunctionalExecutionSuite.java:87)
 
-CreateTreeScreen2(TestExecutionSuite.BasicFunctionalExecutionSuite)  Time elapsed: 240.076 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div' (tried for 100 second(s) with 500 milliseconds interval)
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeScreen2(BasicFunctionalExecutionSuite.java:76)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e
-*** Element info: {Using=xpath, value=//*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div}
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeScreen2(BasicFunctionalExecutionSuite.java:76)
+driverInitalization(TestExecutionSuite.UpdateTreeTestCases)  Time elapsed: 0.172 sec  <<< FAILURE!
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at TestExecutionSuite.UpdateTreeTestCases.driverInitalization(UpdateTreeTestCases.java:34)
 
-UpdateTreeCardsPage(TestExecutionSuite.UpdateTreeTestCases)  Time elapsed: 242.313 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='MuiTypography-root MuiTypography-body1'][1][contains(text(),'1ft or less')]' (tried for 100 second(s) with 500 milliseconds interval)
-	at TestExecutionSuite.UpdateTreeTestCases.UpdateTreeCardsPage(UpdateTreeTestCases.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //*[@class='MuiTypography-root MuiTypography-body1'][1][contains(text(),'1ft or less')]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 99004, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 618655ec-16cd-9c4b-8f42-8b2d23159790
-*** Element info: {Using=xpath, value=//*[@class='MuiTypography-root MuiTypography-body1'][1][contains(text(),'1ft or less')]}
-	at TestExecutionSuite.UpdateTreeTestCases.UpdateTreeCardsPage(UpdateTreeTestCases.java:77)
-
-CreateTreeScreen3(TestExecutionSuite.UpdateTreeTestCases)  Time elapsed: 240.076 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div' (tried for 100 second(s) with 500 milliseconds interval)
-	at TestExecutionSuite.UpdateTreeTestCases.CreateTreeScreen3(UpdateTreeTestCases.java:86)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 99004, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 618655ec-16cd-9c4b-8f42-8b2d23159790
-*** Element info: {Using=xpath, value=//*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div}
-	at TestExecutionSuite.UpdateTreeTestCases.CreateTreeScreen3(UpdateTreeTestCases.java:86)
+afterEveryMethod(TestExecutionSuite.UpdateTreeTestCases)  Time elapsed: 0.172 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at TestExecutionSuite.UpdateTreeTestCases.afterEveryMethod(UpdateTreeTestCases.java:96)
 
