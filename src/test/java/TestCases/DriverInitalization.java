@@ -34,6 +34,7 @@ public class DriverInitalization
 			System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+			options.setBinary("/usr/bin/firefox");
 			driver = new FirefoxDriver(options);
 			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
