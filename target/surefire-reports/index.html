@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods, 3 failed,  2 skipped,  9 passed</span>
+                    <span class="method-stats">14 methods, 5 failed,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content failed suite-Aidash_fe_Execution_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Aidash_fe_Execution_Suite" title="TestExecutionSuite.BasicFunctionalExecutionSuite" class="method navigator-link" hash-for-method="CreateTree">CreateTree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Aidash_fe_Execution_Suite" title="TestExecutionSuite.BasicFunctionalExecutionSuite" class="method navigator-link" hash-for-method="CreateTreeNavigation">CreateTreeNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Aidash_fe_Execution_Suite" title="TestExecutionSuite.BasicFunctionalExecutionSuite" class="method navigator-link" hash-for-method="CreateTreeScreen2">CreateTreeScreen2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -116,25 +126,6 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Aidash_fe_Execution_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Aidash_fe_Execution_Suite" class="hide-methods skipped suite-Aidash_fe_Execution_Suite"> (hide)</a> <!-- hide-methods skipped suite-Aidash_fe_Execution_Suite -->
-                      <a href="#" panel-name="suite-Aidash_fe_Execution_Suite" class="show-methods skipped suite-Aidash_fe_Execution_Suite"> (show)</a> <!-- show-methods skipped suite-Aidash_fe_Execution_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Aidash_fe_Execution_Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Aidash_fe_Execution_Suite" title="TestExecutionSuite.BasicFunctionalExecutionSuite" class="method navigator-link" hash-for-method="CreateTree">CreateTree</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Aidash_fe_Execution_Suite" title="TestExecutionSuite.BasicFunctionalExecutionSuite" class="method navigator-link" hash-for-method="CreateTreeScreen2">CreateTreeScreen2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Aidash_fe_Execution_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -208,16 +199,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateTreeNavigation">
-                  </a> <!-- CreateTreeNavigation -->
-                  <span class="method-name">CreateTreeNavigation</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
+                  <a name="CreateTree">
+                  </a> <!-- CreateTree -->
+                  <span class="method-name">CreateTree</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiButton-label&apos;][contains(text(),&apos;Next&apos;)]&apos; (tried for 100 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commonMethods.CommMeths.elementExplicitWait(CommMeths.java:46)
+	at POM.Ai_Dash_create_Tree_page.ClickOnNextButton(Ai_Dash_create_Tree_page.java:88)
+	at TestCases.CommonTestCases.Ai_Dash_create_Tree_page(CommonTestCases.java:76)
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTree(BasicFunctionalExecutionSuite.java:68)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;MuiButton-label&apos;][contains(text(),&apos;Next&apos;)]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1036:7d1e:fe39:cebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;192.168.1.7&apos;, ip: &apos;fe80:0:0:0:10e9:55b4:2433:9642%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42717, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd
-*** Element info: {Using=xpath, value=//*[@class=&apos;MuiSvgIcon-root jss19&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e
+*** Element info: {Using=xpath, value=//*[@class=&apos;MuiButton-label&apos;][contains(text(),&apos;Next&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -238,10 +237,80 @@ Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commonMethods.CommMeths.elementExplicitWait(CommMeths.java:45)
-	at POM.Ai_Dash_Home_Page.clickMUIButton(Ai_Dash_Home_Page.java:59)
-	at TestCases.CommonTestCases.Ai_Dash_Home_Page(CommonTestCases.java:68)
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeNavigation(BasicFunctionalExecutionSuite.java:64)
+	... 32 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateTreeNavigation">
+                  </a> <!-- CreateTreeNavigation -->
+                  <span class="method-name">CreateTreeNavigation</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;span&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;192.168.1.7&apos;, ip: &apos;fe80:0:0:0:10e9:55b4:2433:9642%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at POM.Ai_Dash_Home_Page.HazardTreeMUIButton(Ai_Dash_Home_Page.java:84)
+	at TestCases.CommonTestCases.Ai_Dash_Home_Page(CommonTestCases.java:67)
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeNavigation(BasicFunctionalExecutionSuite.java:60)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateTreeScreen2">
+                  </a> <!-- CreateTreeScreen2 -->
+                  <span class="method-name">CreateTreeScreen2</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiGrid-root MuiGrid-container MuiGrid-item&apos;][1]/div/div[2]/div/div/div&apos; (tried for 100 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commonMethods.CommMeths.elementExplicitWait(CommMeths.java:46)
+	at POM.Ai_dash_create_tree_screen2.NearestCircuit(Ai_dash_create_tree_screen2.java:46)
+	at TestCases.CommonTestCases.Ai_dash_create_tree_screen2(CommonTestCases.java:92)
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeScreen2(BasicFunctionalExecutionSuite.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;MuiGrid-root MuiGrid-container MuiGrid-item&apos;][1]/div/div[2]/div/div/div
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;192.168.1.7&apos;, ip: &apos;fe80:0:0:0:10e9:55b4:2433:9642%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e
+*** Element info: {Using=xpath, value=//*[@class=&apos;MuiGrid-root MuiGrid-container MuiGrid-item&apos;][1]/div/div[2]/div/div/div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 32 more
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -262,17 +331,17 @@ Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd
                   <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiGrid-root MuiGrid-container MuiGrid-item&apos;][1]/div/div[2]/div/div/div&apos; (tried for 100 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commonMethods.CommMeths.elementExplicitWait(CommMeths.java:45)
-	at POM.Ai_dash_create_tree_screen2.NearestCircuit(Ai_dash_create_tree_screen2.java:48)
-	at TestCases.EditTreeTestCases.Ai_dash_create_tree_screen2(EditTreeTestCases.java:112)
+	at commonMethods.CommMeths.elementExplicitWait(CommMeths.java:46)
+	at POM.Ai_dash_create_tree_screen2.NearestCircuit(Ai_dash_create_tree_screen2.java:46)
+	at TestCases.EditTreeTestCases.Ai_dash_create_tree_screen2(EditTreeTestCases.java:111)
 	at TestExecutionSuite.UpdateTreeTestCases.CreateTreeScreen3(UpdateTreeTestCases.java:86)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;MuiGrid-root MuiGrid-container MuiGrid-item&apos;][1]/div/div[2]/div/div/div
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1036:7d1e:fe39:cebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;192.168.1.7&apos;, ip: &apos;fe80:0:0:0:10e9:55b4:2433:9642%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42731, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c659742-ceb3-e24e-b20e-f7fbb363b04a
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 99004, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 618655ec-16cd-9c4b-8f42-8b2d23159790
 *** Element info: {Using=xpath, value=//*[@class=&apos;MuiGrid-root MuiGrid-container MuiGrid-item&apos;][1]/div/div[2]/div/div/div}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -304,21 +373,21 @@ Session ID: 2c659742-ceb3-e24e-b20e-f7fbb363b04a
                   <a name="UpdateTreeCardsPage">
                   </a> <!-- UpdateTreeCardsPage -->
                   <span class="method-name">UpdateTreeCardsPage</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12&apos;][3]/div/div/div/div[3]&apos; (tried for 100 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiTypography-root MuiTypography-body1&apos;][1][contains(text(),&apos;1ft or less&apos;)]&apos; (tried for 100 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commonMethods.CommMeths.elementExplicitWait(CommMeths.java:45)
-	at POM.Ai_Dash_create_Tree_page.RiskLevelButton(Ai_Dash_create_Tree_page.java:247)
-	at TestCases.EditTreeTestCases.Ai_Dash_create_Tree_page(EditTreeTestCases.java:103)
+	at commonMethods.CommMeths.elementExplicitWait(CommMeths.java:46)
+	at POM.Ai_Dash_create_Tree_page.DistanceToLineButton(Ai_Dash_create_Tree_page.java:151)
+	at TestCases.EditTreeTestCases.Ai_Dash_create_Tree_page(EditTreeTestCases.java:99)
 	at TestExecutionSuite.UpdateTreeTestCases.UpdateTreeCardsPage(UpdateTreeTestCases.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12&apos;][3]/div/div/div/div[3]
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&apos;MuiTypography-root MuiTypography-body1&apos;][1][contains(text(),&apos;1ft or less&apos;)]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1036:7d1e:fe39:cebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;192.168.1.7&apos;, ip: &apos;fe80:0:0:0:10e9:55b4:2433:9642%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42731, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c659742-ceb3-e24e-b20e-f7fbb363b04a
-*** Element info: {Using=xpath, value=//*[@class=&apos;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12&apos;][3]/div/div/div/div[3]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 99004, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 618655ec-16cd-9c4b-8f42-8b2d23159790
+*** Element info: {Using=xpath, value=//*[@class=&apos;MuiTypography-root MuiTypography-body1&apos;][1][contains(text(),&apos;1ft or less&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -346,64 +415,6 @@ Session ID: 2c659742-ceb3-e24e-b20e-f7fbb363b04a
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Aidash_fe_Execution_Suite-class-failed -->
-          <div class="suite-Aidash_fe_Execution_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestExecutionSuite.BasicFunctionalExecutionSuite</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreateTree">
-                  </a> <!-- CreateTree -->
-                  <span class="method-name">CreateTree</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1036:7d1e:fe39:cebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42717, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at TestCases.CommonTestCases.takeScreenShotOnFailure(CommonTestCases.java:102)
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.afterEveryMethod(BasicFunctionalExecutionSuite.java:91)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreateTreeScreen2">
-                  </a> <!-- CreateTreeScreen2 -->
-                  <span class="method-name">CreateTreeScreen2</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1036:7d1e:fe39:cebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42717, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at TestCases.CommonTestCases.takeScreenShotOnFailure(CommonTestCases.java:102)
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.afterEveryMethod(BasicFunctionalExecutionSuite.java:91)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Aidash_fe_Execution_Suite-class-skipped -->
           <div class="suite-Aidash_fe_Execution_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -556,64 +567,64 @@ data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'UpdateTreeCardsPage')
 data.setCell(0, 2, 'TestExecutionSuite.UpdateTreeTestCases')
-data.setCell(0, 3, 242095);
+data.setCell(0, 3, 242313);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'CreateTreeScreen3')
-data.setCell(1, 2, 'TestExecutionSuite.UpdateTreeTestCases')
-data.setCell(1, 3, 240091);
+data.setCell(1, 1, 'CreateTree')
+data.setCell(1, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
+data.setCell(1, 3, 240111);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Navigation')
-data.setCell(2, 2, 'TestExecutionSuite.UpdateTreeTestCases')
-data.setCell(2, 3, 10527);
+data.setCell(2, 1, 'CreateTreeScreen2')
+data.setCell(2, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
+data.setCell(2, 3, 240076);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CreateTreeNavigation')
-data.setCell(3, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
-data.setCell(3, 3, 6384);
+data.setCell(3, 1, 'CreateTreeScreen3')
+data.setCell(3, 2, 'TestExecutionSuite.UpdateTreeTestCases')
+data.setCell(3, 3, 240075);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'driverInitalization')
-data.setCell(4, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
-data.setCell(4, 3, 5773);
+data.setCell(4, 1, 'Navigation')
+data.setCell(4, 2, 'TestExecutionSuite.UpdateTreeTestCases')
+data.setCell(4, 3, 7452);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'LoginToAidash')
 data.setCell(5, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
-data.setCell(5, 3, 4352);
+data.setCell(5, 3, 6984);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'LoginToAidash')
-data.setCell(6, 2, 'TestExecutionSuite.UpdateTreeTestCases')
-data.setCell(6, 3, 3769);
+data.setCell(6, 1, 'driverInitalization')
+data.setCell(6, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
+data.setCell(6, 3, 5359);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'driverInitalization')
+data.setCell(7, 1, 'LoginToAidash')
 data.setCell(7, 2, 'TestExecutionSuite.UpdateTreeTestCases')
-data.setCell(7, 3, 3745);
+data.setCell(7, 3, 4391);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'EditTreeCardsPage')
-data.setCell(8, 2, 'TestExecutionSuite.UpdateTreeTestCases')
-data.setCell(8, 3, 2191);
+data.setCell(8, 1, 'CreateTreeNavigation')
+data.setCell(8, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
+data.setCell(8, 3, 4205);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'ListTreeCardsPage')
+data.setCell(9, 1, 'driverInitalization')
 data.setCell(9, 2, 'TestExecutionSuite.UpdateTreeTestCases')
-data.setCell(9, 3, 2018);
+data.setCell(9, 3, 2640);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'openUrlForAidashLoginPage')
-data.setCell(10, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
-data.setCell(10, 3, 1978);
+data.setCell(10, 2, 'TestExecutionSuite.UpdateTreeTestCases')
+data.setCell(10, 3, 2353);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'openUrlForAidashLoginPage')
+data.setCell(11, 1, 'EditTreeCardsPage')
 data.setCell(11, 2, 'TestExecutionSuite.UpdateTreeTestCases')
-data.setCell(11, 3, 1831);
+data.setCell(11, 3, 2163);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'CreateTreeScreen2')
+data.setCell(12, 1, 'openUrlForAidashLoginPage')
 data.setCell(12, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
-data.setCell(12, 3, 0);
+data.setCell(12, 3, 2037);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'CreateTree')
-data.setCell(13, 2, 'TestExecutionSuite.BasicFunctionalExecutionSuite')
-data.setCell(13, 3, 0);
+data.setCell(13, 1, 'ListTreeCardsPage')
+data.setCell(13, 2, 'TestExecutionSuite.UpdateTreeTestCases')
+data.setCell(13, 3, 2037);
 window.suiteTableData['Aidash_fe_Execution_Suite']= { tableData: data, tableDiv: 'times-div-Aidash_fe_Execution_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <span class="suite-total-time">Total running time: 16 minutes</span>
               <div id="times-div-Aidash_fe_Execution_Suite">
               </div> <!-- times-div-Aidash_fe_Execution_Suite -->
             </div> <!-- times-div -->
@@ -656,130 +667,144 @@ return data;
               <div class="chronological-class-name">TestExecutionSuite.BasicFunctionalExecutionSuite</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">192 ms</span>
+                <span class="method-start">66 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">driverInitalization(firefox)</span>
-                <span class="method-start">200 ms</span>
+                <span class="method-start">77 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=driverInitalization status=SUCCESS method=BasicFunctionalExecutionSuite.driverInita...)</span>
-                <span class="method-start">5973 ms</span>
+                <span class="method-start">5436 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">openUrlForAidashLoginPage</span>
-                <span class="method-start">5974 ms</span>
+                <span class="method-start">5438 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=openUrlForAidashLoginPage status=SUCCESS method=BasicFunctionalExecutionSuite.openU...)</span>
-                <span class="method-start">7952 ms</span>
+                <span class="method-start">7475 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">LoginToAidash</span>
-                <span class="method-start">7952 ms</span>
+                <span class="method-start">7475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=LoginToAidash status=SUCCESS method=BasicFunctionalExecutionSuite.LoginToAidash()[p...)</span>
-                <span class="method-start">12304 ms</span>
+                <span class="method-start">14459 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">CreateTreeNavigation</span>
-                <span class="method-start">12304 ms</span>
+                <span class="method-start">14460 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">afterEveryMethod([TestResult name=CreateTreeNavigation status=FAILURE method=BasicFunctionalExecutionSuite.CreateTree...)</span>
-                <span class="method-start">18693 ms</span>
+                <span class="method-start">18670 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">CreateTree</span>
-                <span class="method-start">18697 ms</span>
+                <span class="method-start">19330 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEveryMethod([TestResult name=CreateTree status=FAILURE method=BasicFunctionalExecutionSuite.CreateTree()[pri:4, ...)</span>
+                <span class="method-start">259442 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">CreateTreeScreen2</span>
-                <span class="method-start">18697 ms</span>
+                <span class="method-start">259931 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEveryMethod([TestResult name=CreateTreeScreen2 status=FAILURE method=BasicFunctionalExecutionSuite.CreateTreeScr...)</span>
+                <span class="method-start">500007 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">500478 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestExecutionSuite.UpdateTreeTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">18716 ms</span>
+                <span class="method-start">500506 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">driverInitalization(firefox)</span>
-                <span class="method-start">18716 ms</span>
+                <span class="method-start">500506 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=driverInitalization status=SUCCESS method=UpdateTreeTestCases.driverInitalization(j...)</span>
-                <span class="method-start">22462 ms</span>
+                <span class="method-start">503146 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">openUrlForAidashLoginPage</span>
-                <span class="method-start">22462 ms</span>
+                <span class="method-start">503146 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=openUrlForAidashLoginPage status=SUCCESS method=UpdateTreeTestCases.openUrlForAidas...)</span>
-                <span class="method-start">24293 ms</span>
+                <span class="method-start">505499 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">LoginToAidash</span>
-                <span class="method-start">24294 ms</span>
+                <span class="method-start">505499 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=LoginToAidash status=SUCCESS method=UpdateTreeTestCases.LoginToAidash()[pri:2, inst...)</span>
-                <span class="method-start">28063 ms</span>
+                <span class="method-start">509890 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Navigation</span>
-                <span class="method-start">28064 ms</span>
+                <span class="method-start">509891 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=Navigation status=SUCCESS method=UpdateTreeTestCases.Navigation()[pri:3, instance:T...)</span>
-                <span class="method-start">38591 ms</span>
+                <span class="method-start">517343 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ListTreeCardsPage</span>
-                <span class="method-start">38591 ms</span>
+                <span class="method-start">517343 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=ListTreeCardsPage status=SUCCESS method=UpdateTreeTestCases.ListTreeCardsPage()[pri...)</span>
-                <span class="method-start">40609 ms</span>
+                <span class="method-start">519380 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">EditTreeCardsPage</span>
-                <span class="method-start">40610 ms</span>
+                <span class="method-start">519380 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=EditTreeCardsPage status=SUCCESS method=UpdateTreeTestCases.EditTreeCardsPage()[pri...)</span>
-                <span class="method-start">42801 ms</span>
+                <span class="method-start">521543 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">UpdateTreeCardsPage</span>
-                <span class="method-start">42802 ms</span>
+                <span class="method-start">521544 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=UpdateTreeCardsPage status=FAILURE method=UpdateTreeTestCases.UpdateTreeCardsPage()...)</span>
-                <span class="method-start">284897 ms</span>
+                <span class="method-start">763857 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">CreateTreeScreen3</span>
-                <span class="method-start">285335 ms</span>
+                <span class="method-start">764235 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod([TestResult name=CreateTreeScreen3 status=FAILURE method=UpdateTreeTestCases.CreateTreeScreen3()[pri...)</span>
-                <span class="method-start">525429 ms</span>
+                <span class="method-start">1004311 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">525848 ms</span>
+                <span class="method-start">1004680 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

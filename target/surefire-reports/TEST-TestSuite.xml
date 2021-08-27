@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="526.177" tests="18" errors="0" skipped="5" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,004.996" tests="14" errors="0" skipped="0" failures="5">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+0"/>
@@ -34,13 +34,13 @@
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/yogeshbhatt"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="US-ASCII"/>
     <property name="java.specification.version" value="16"/>
     <property name="user.name" value="yogeshbhatt"/>
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.1/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.home" value="/usr/local/Cellar/openjdk/16.0.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -57,90 +57,126 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="driverInitalization" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="5.772"/>
-  <testcase name="openUrlForAidashLoginPage" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="1.978"/>
-  <testcase name="LoginToAidash" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="4.352"/>
-  <testcase name="CreateTreeNavigation" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="6.389">
-    <failure message="TypeError: browsingContext.currentWindowGlobal is null&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1036:7d1e:fe39:cebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42717, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd&#10;*** Element info: {Using=xpath, value=//*[@class=&apos;MuiSvgIcon-root jss19&apos;]}" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-TypeError: browsingContext.currentWindowGlobal is null
+  <testcase name="driverInitalization" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="5.359"/>
+  <testcase name="openUrlForAidashLoginPage" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="2.037"/>
+  <testcase name="LoginToAidash" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="6.984"/>
+  <testcase name="CreateTreeNavigation" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="4.211">
+    <failure message="Element &lt;span&gt; could not be scrolled into view&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;192.168.1.7&apos;, ip: &apos;fe80:0:0:0:10e9:55b4:2433:9642%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+Element <span> could not be scrolled into view
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro.local', ip: 'fe80:0:0:0:1036:7d1e:fe39:cebd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
+System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42717, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd
-*** Element info: {Using=xpath, value=//*[@class='MuiSvgIcon-root jss19']}
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeNavigation(BasicFunctionalExecutionSuite.java:64)
-</failure>
-    <system-err><![CDATA[Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
-getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:326:29
-
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeNavigation(BasicFunctionalExecutionSuite.java:60)
+]]></failure>
+    <system-out><![CDATA[clicked on MUI button and screen in large now
+clicked on MUI button and screen in large now
+MUI screen is large now
+]]></system-out>
+    <system-err><![CDATA[1630043273911	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:238:19
+TimedPromise@chrome://remote/content/marionette/sync.js:223:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
 ]]></system-err>
   </testcase>
-  <testcase name="afterEveryMethod" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="6.392">
-    <failure message="Browsing context has been discarded&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1036:7d1e:fe39:cebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42717, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
-Browsing context has been discarded
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro.local', ip: 'fe80:0:0:0:1036:7d1e:fe39:cebd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42717, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd
-	at TestExecutionSuite.BasicFunctionalExecutionSuite.afterEveryMethod(BasicFunctionalExecutionSuite.java:91)
-</failure>
-  </testcase>
-  <testcase name="afterEveryMethod" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="afterEveryMethod" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="CreateTree" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="0">
-    <skipped message="Browsing context has been discarded&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1036:7d1e:fe39:cebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42717, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd"/>
-  </testcase>
-  <testcase name="CreateTreeScreen2" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="0">
-    <skipped message="Browsing context has been discarded&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1036:7d1e:fe39:cebd%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;16.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42717, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 9004a001-08e8-8341-b2c1-5f667503b2dd"/>
-  </testcase>
-  <testcase name="teardown" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="driverInitalization" classname="TestExecutionSuite.UpdateTreeTestCases" time="3.746"/>
-  <testcase name="openUrlForAidashLoginPage" classname="TestExecutionSuite.UpdateTreeTestCases" time="1.832"/>
-  <testcase name="LoginToAidash" classname="TestExecutionSuite.UpdateTreeTestCases" time="3.769"/>
-  <testcase name="Navigation" classname="TestExecutionSuite.UpdateTreeTestCases" time="10.527"/>
-  <testcase name="ListTreeCardsPage" classname="TestExecutionSuite.UpdateTreeTestCases" time="2.018"/>
-  <testcase name="EditTreeCardsPage" classname="TestExecutionSuite.UpdateTreeTestCases" time="2.192"/>
-  <testcase name="UpdateTreeCardsPage" classname="TestExecutionSuite.UpdateTreeTestCases" time="242.096">
-    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12&apos;][3]/div/div/div/div[3]&apos; (tried for 100 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12'][3]/div/div/div/div[3]' (tried for 100 second(s) with 500 milliseconds interval)
-	at TestExecutionSuite.UpdateTreeTestCases.UpdateTreeCardsPage(UpdateTreeTestCases.java:77)
+  <testcase name="CreateTree" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="240.112">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiButton-label&apos;][contains(text(),&apos;Next&apos;)]&apos; (tried for 100 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='MuiButton-label'][contains(text(),'Next')]' (tried for 100 second(s) with 500 milliseconds interval)
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTree(BasicFunctionalExecutionSuite.java:68)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //*[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12'][3]/div/div/div/div[3]
+Unable to locate element: //*[@class='MuiButton-label'][contains(text(),'Next')]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro.local', ip: 'fe80:0:0:0:1036:7d1e:fe39:cebd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
+System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42731, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c659742-ceb3-e24e-b20e-f7fbb363b04a
-*** Element info: {Using=xpath, value=//*[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12'][3]/div/div/div/div[3]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e
+*** Element info: {Using=xpath, value=//*[@class='MuiButton-label'][contains(text(),'Next')]}
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTree(BasicFunctionalExecutionSuite.java:68)
+</failure>
+    <system-out><![CDATA[ Screen shot captured for failed Test case 
+]]></system-out>
+    <system-err><![CDATA[JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+]]></system-err>
+  </testcase>
+  <testcase name="CreateTreeScreen2" classname="TestExecutionSuite.BasicFunctionalExecutionSuite" time="240.076">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiGrid-root MuiGrid-container MuiGrid-item&apos;][1]/div/div[2]/div/div/div&apos; (tried for 100 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div' (tried for 100 second(s) with 500 milliseconds interval)
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeScreen2(BasicFunctionalExecutionSuite.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 98733, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e1f77d27-4f33-b84e-9969-e01136c4dc0e
+*** Element info: {Using=xpath, value=//*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div}
+	at TestExecutionSuite.BasicFunctionalExecutionSuite.CreateTreeScreen2(BasicFunctionalExecutionSuite.java:76)
+</failure>
+    <system-out><![CDATA[ Screen shot captured for failed Test case 
+]]></system-out>
+    <system-err><![CDATA[console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+]]></system-err>
+  </testcase>
+  <testcase name="driverInitalization" classname="TestExecutionSuite.UpdateTreeTestCases" time="2.64"/>
+  <testcase name="openUrlForAidashLoginPage" classname="TestExecutionSuite.UpdateTreeTestCases" time="2.353"/>
+  <testcase name="LoginToAidash" classname="TestExecutionSuite.UpdateTreeTestCases" time="4.391"/>
+  <testcase name="Navigation" classname="TestExecutionSuite.UpdateTreeTestCases" time="7.452"/>
+  <testcase name="ListTreeCardsPage" classname="TestExecutionSuite.UpdateTreeTestCases" time="2.037"/>
+  <testcase name="EditTreeCardsPage" classname="TestExecutionSuite.UpdateTreeTestCases" time="2.163"/>
+  <testcase name="UpdateTreeCardsPage" classname="TestExecutionSuite.UpdateTreeTestCases" time="242.313">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiTypography-root MuiTypography-body1&apos;][1][contains(text(),&apos;1ft or less&apos;)]&apos; (tried for 100 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='MuiTypography-root MuiTypography-body1'][1][contains(text(),'1ft or less')]' (tried for 100 second(s) with 500 milliseconds interval)
+	at TestExecutionSuite.UpdateTreeTestCases.UpdateTreeCardsPage(UpdateTreeTestCases.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //*[@class='MuiTypography-root MuiTypography-body1'][1][contains(text(),'1ft or less')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 99004, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 618655ec-16cd-9c4b-8f42-8b2d23159790
+*** Element info: {Using=xpath, value=//*[@class='MuiTypography-root MuiTypography-body1'][1][contains(text(),'1ft or less')]}
 	at TestExecutionSuite.UpdateTreeTestCases.UpdateTreeCardsPage(UpdateTreeTestCases.java:77)
 </failure>
     <system-out><![CDATA[Click on next button
 click on species button is successful
 click on Tree Condition Dropdown button is successful
-click on Distance To Line button is successful
-click on Tree Height Dropdown button is successful
-click on Diameter At Breast Height button is successful
 ]]></system-out>
   </testcase>
-  <testcase name="CreateTreeScreen3" classname="TestExecutionSuite.UpdateTreeTestCases" time="240.094">
+  <testcase name="CreateTreeScreen3" classname="TestExecutionSuite.UpdateTreeTestCases" time="240.076">
     <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@class=&apos;MuiGrid-root MuiGrid-container MuiGrid-item&apos;][1]/div/div[2]/div/div/div&apos; (tried for 100 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div' (tried for 100 second(s) with 500 milliseconds interval)
 	at TestExecutionSuite.UpdateTreeTestCases.CreateTreeScreen3(UpdateTreeTestCases.java:86)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 Unable to locate element: //*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro.local', ip: 'fe80:0:0:0:1036:7d1e:fe39:cebd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
+System info: host: '192.168.1.7', ip: 'fe80:0:0:0:10e9:55b4:2433:9642%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42731, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2c659742-ceb3-e24e-b20e-f7fbb363b04a
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210804193234, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 99004, moz:profile: /var/folders/kq/d7mjnjx936z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 618655ec-16cd-9c4b-8f42-8b2d23159790
 *** Element info: {Using=xpath, value=//*[@class='MuiGrid-root MuiGrid-container MuiGrid-item'][1]/div/div[2]/div/div/div}
 	at TestExecutionSuite.UpdateTreeTestCases.CreateTreeScreen3(UpdateTreeTestCases.java:86)
 </failure>
@@ -156,18 +192,6 @@ console.error: services.settings:
 console.error: services.settings: 
   main/doh-config local data was corrupted
 console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
-console.error: services.settings: 
-  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
-console.error: services.settings: 
-  main/doh-providers local data was corrupted
-console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
-console.error: services.settings: 
-  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
-console.error: services.settings: 
-  main/doh-config local data was corrupted
-console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
-console.log: WebExtensions: reset-default-search: starting.
-console.log: WebExtensions: reset-default-search: No addons in our list are installed.
 ]]></system-err>
   </testcase>
 </testsuite>

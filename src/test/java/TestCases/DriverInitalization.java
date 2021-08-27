@@ -30,7 +30,7 @@ public class DriverInitalization
 		{
 			Logs.startLog("Initialzing Driver");
 			Logs.addToReport("Execution starts now. Driver Initialization for ", info);
-			System.setProperty("webdriver.gecko.driver", "/Users/yogeshbhatt/Downloads/AIDASH-FE_TESTS/FE-TEST-SUITE/exes/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "./exes/geckodriver");
 			driver = new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 			driver.manage().window().maximize();

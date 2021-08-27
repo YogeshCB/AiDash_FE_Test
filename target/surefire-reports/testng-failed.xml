@@ -10,6 +10,7 @@
           <include name="CreateTreeScreen2"/>
           <include name="beforesuite"/>
           <include name="CreateTreeNavigation"/>
+          <include name="teardown"/>
           <include name="afterEveryMethod"/>
           <include name="CreateTree"/>
           <include name="setup"/>
@@ -40,6 +41,7 @@
       <class name="TestExecutionSuite.BasicFunctionalExecutionSuite">
         <methods>
           <include name="beforesuite"/>
+          <include name="teardown"/>
           <include name="afterEveryMethod"/>
           <include name="setup"/>
         </methods>
