@@ -31,7 +31,7 @@ public class DriverInitalization
 		{
 			Logs.startLog("Initialzing Driver");
 			Logs.addToReport("Execution starts now. Driver Initialization for ", info);
-			System.setProperty("webdriver.gecko.driver", "./exes/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "./usr/bin/geckodriver");
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
 			driver = new FirefoxDriver(options);
