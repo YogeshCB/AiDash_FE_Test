@@ -31,6 +31,7 @@ public class Ai_Dash_create_Tree_page {
             this.driver = driver;
             PageFactory.initElements(driver, this);
             cm = new CommMeths();
+
         }
 
     //Xpath for report tree button on tree list page
@@ -96,6 +97,7 @@ public class Ai_Dash_create_Tree_page {
         } else {
             Logs.addToReport("clicking on next removal button", fail);
             Logs.stopLog();
+
             driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         }
     }
