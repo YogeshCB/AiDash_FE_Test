@@ -55,25 +55,25 @@ public class BasicFunctionalExecutionSuite {
 	}
 
 	@Test (priority = 3)
-	@DataProvider()
-	public void CreateTreeNavigation() throws InterruptedException {
+	public void Navigation() throws InterruptedException {
 		ctcs.Ai_Dash_Home_Page();
 		Thread.sleep(100);
-
 
 	}
 
 	@Test (priority = 4)
 	public void CreateTree() throws InterruptedException {
 		ctcs.Ai_Dash_create_Tree_page();
-		Thread.sleep(1000);
+		Thread.sleep(100);
+
+
 
 	}
 
 	@Test (priority = 5)
-	public void CreateTreeScreen2()
-	{
+	public void CreateTreeScreen2() throws InterruptedException {
 		ctcs.Ai_dash_create_tree_screen2();
+		Thread.sleep(100);
 
 	}
 

@@ -29,16 +29,17 @@ public class DriverInitalization
 		this.driver=driver;
 		if(browser.equalsIgnoreCase("firefox"))
 		{
-			Logs.startLog("Initialzing Driver");
-			Logs.addToReport("Execution starts now. Driver Initialization for ", info);
-			System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
-			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
-			//options.setBinary("/usr/bin/firefox");
-			driver = new FirefoxDriver(options);
-			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			Logs.addToReport("Browser Initialization success", pass);
+			{
+				Logs.startLog("Initialzing Driver");
+				Logs.addToReport("Execution starts now. Driver Initialization for ", info);
+				System.setProperty("webdriver.gecko.driver", "exes/geckodriver");
+				FirefoxOptions options = new FirefoxOptions();
+				options.setHeadless(true);
+				driver = new FirefoxDriver(options);
+				driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+				driver.manage().window().maximize();
+				Logs.addToReport("Browser Initialization success", pass);
+			}
 		}
 		Logs.stopLog();
 		return driver;

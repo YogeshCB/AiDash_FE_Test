@@ -50,7 +50,7 @@ public class Ai_dash_login_screen {
             Logs.addToReport("Select Email Id box on webapp", info);
             EnterEmail.click();
             Logs.addToReport("Email id box has been selected", info);
-            EnterEmail.sendKeys("gautam@aidash.com");
+            EnterEmail.sendKeys("bablu@aidash.com");
             Logs.addToReport("Email has been entered", pass);
             cm.elementExplicitWait(driver, EnterEmail, 700);
             Logs.stopLog();

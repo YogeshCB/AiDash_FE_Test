@@ -31,7 +31,7 @@ public class Ai_Dash_Home_Page {
 
 
     //xpath for MUi
-    @FindBy(xpath = "//*[@class='MuiSvgIcon-root jss19']")
+    @FindBy(xpath = "//*[@class='MuiButtonBase-root MuiIconButton-root']/span")
     WebElement Muibutton ;
 
     //xpath for Hazardtree
