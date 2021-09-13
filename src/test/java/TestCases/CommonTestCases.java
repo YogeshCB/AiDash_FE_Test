@@ -58,14 +58,22 @@ public class CommonTestCases {
 		login.clickLoginButton();
 	    }
 
-	public void Ai_Dash_Home_Page()
+	public void Ai_Dash_Home_Page() throws InterruptedException {
 	   {
 
 		expandMUIScreen= new Ai_Dash_Home_Page(driver);
+		Thread.sleep(1000);
+
 		expandMUIScreen.clickMUIButton();
+		Thread.sleep(1000);
 		expandMUIScreen.HazardTreeMUIButton();
+		Thread.sleep(1000);
+
 		expandMUIScreen.TreeRemovalButton();
+		Thread.sleep(1000);
+
 		expandMUIScreen.ReportTreeButton();
+		Thread.sleep(1000);
 	    }
 
 	public void Ai_Dash_create_Tree_page() throws InterruptedException
