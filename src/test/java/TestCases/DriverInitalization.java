@@ -7,6 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.asserts.SoftAssert;
+import org.openqa.selenium.firefox.FirefoxProfile;
+
 
 import commonMethods.CommMeths;
 import commonMethods.Logs;
@@ -35,6 +37,8 @@ public class DriverInitalization
 				Logs.addToReport("Execution starts now. Driver Initialization for ", info);
 				System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
 				FirefoxOptions options = new FirefoxOptions();
+					FirefoxProfile  profile= new FirefoxProfile();
+				profile.setPreference("javascript.enabled", true);
 				options.setHeadless(true);
 				driver = new FirefoxDriver(options);
 				driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
