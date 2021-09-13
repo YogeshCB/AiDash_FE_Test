@@ -34,9 +34,9 @@ public class DriverInitalization
 				Logs.startLog("Initialzing Driver");
 				Logs.addToReport("Execution starts now. Driver Initialization for ", info);
 				System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
-				DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-				capabilities.setCapability("marionette", true);
-				driver = new FirefoxDriver();
+				FirefoxOptions options = new FirefoxOptions();
+				options.setHeadless(true);
+				driver = new FirefoxDriver(options);
 				driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 				driver.manage().window().maximize();
 				Logs.addToReport("Browser Initialization success", pass);
