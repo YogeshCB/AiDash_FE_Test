@@ -38,7 +38,10 @@ public class DriverInitalization
 				System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
 				FirefoxOptions options = new FirefoxOptions();
 					FirefoxProfile  profile= new FirefoxProfile();
-				profile.setPreference("javascript.enabled", true);
+				options.addArguments("--disable-webgl");
+
+				options.addArguments("--disable-extensions");
+
 				options.setHeadless(true);
 				driver = new FirefoxDriver(options);
 				driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
